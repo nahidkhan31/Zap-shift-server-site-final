@@ -33,6 +33,7 @@ async function run() {
     const db = client.db('zap_shift_db'); //database name
     const parcelsCollection = db.collection('parcels'); //collection
     const paymentsCollection = db.collection('payments'); // payment collection
+    const trackingsCollection = db.collection('trackings');
      
 
     app.get('/parcels', async (req, res) => {
